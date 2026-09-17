@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: service-resource                    # the name of the service account resource
+
+  namespace: <your-name-space-name>         # use a namespace you can access
+                                            # for those using openhift free 30 day
+                                            # plan. Or create a namespace and use it

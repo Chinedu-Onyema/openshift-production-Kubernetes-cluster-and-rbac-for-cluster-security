@@ -1,0 +1,38 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding                                      # this file is just the binding role.yml but
+metadata:                                              # in different segments that states the
+  name: role-binding-resource                          # the service account access for each namespace
+  namespace: techdealer1000-dev                        # you want the service account to access usng the the role for each namespace
+subjects:                                              # usng the the define role from the  for each namespace
+- kind: ServiceAccount
+  name: service-resource  
+roleRef:
+  kind: Role
+  name: role-resource
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: role-binding-resource
+  namespace: sandbox-shared-models
+subjects:
+- kind: ServiceAccount
+  name: service-resource 
+roleRef:
+  kind: Role
+  name: role-resource
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: role-binding-resource
+  namespace: openshift-virtualization-os-images
+subjects:
+- kind: ServiceAccount
+  name: service-resource 
+roleRef:
+  kind: Role
+  name: role-resource
+  apiGroup: rbac.authorization.k8s.io

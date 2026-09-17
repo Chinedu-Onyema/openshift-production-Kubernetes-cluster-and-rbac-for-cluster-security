@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding                                     # permission for all namespaces within a cluster
+metadata:
+  name: cluster-role-binding-resource
+subjects:
+- kind: ServiceAccount
+  name: service-resource 
+  namespace: <your-name-space-name> 
+roleRef:
+  apiGroup: rbac.authorization.k8s.io                                    
+  kind: ClusterRole                                          # this means that this role is                                                
+  name: multi-namespace-role                                 # for all namespaces within a cluster
+  apiGroup: rbac.authorization.k8s.io                                 
+                                                                         

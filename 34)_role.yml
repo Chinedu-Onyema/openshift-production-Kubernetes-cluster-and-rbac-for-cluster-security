@@ -1,0 +1,35 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role                                        # permission for a specific namespace within a cluster
+metadata:
+  name: role-resource                             # the name of the role
+
+  namespace: <your-namespace-name>                   # use a namespace you can access
+rules:
+- apiGroups: [""]                                                          # this means you want the service account resource to access
+                                                                           # the core api group. pods and services belong to this group
+                                                                           # by deafault and which means "" automatically maps to core
+
+  resources: ["pods", "services"]                                          # this resources belong to the core api group
+
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]    # this means you want the service account resource to use
+                                                                            # verbs like (get, list, watch, create, update, patch, and delete)
+                                                                            # on the api groups and resource rules within it namespace 
+
+- apiGroups: ["apps"]                                                      # this means you want the service account resource to access
+                                                                           # the apps api group. deployments belong to this group
+                                                                           # by deafult
+
+  resources: ["deployments"]                                                # this resources belong to the core api group
+
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]    # this means you want the service account resource to use
+                                                                            # verbs like (get, list, watch, create, update, patch, and delete)
+                                                                            # on the api groups and resource rules within it namespace 
+
+
+
+
+
+
+
+
+

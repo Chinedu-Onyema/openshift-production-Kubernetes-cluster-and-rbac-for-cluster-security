@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding                                  # type of permission you are creating
+metadata:
+  name: role-binding-resource                      # name of the binding role resource
+  namespace: <your-namespace-name>                 # use a namespace you can access
+
+subjects:                                          # what is being granted access
+- kind: ServiceAccount                             # your service account file you want to assume the role
+  name: service-resource                           # the name of your service account             
+  namespace: <your-namespace-name>                 # use a namespace you can access
+
+roleRef:                                           # the resource that are set to be granted
+  kind: Role                                       # the role file you created to for your service account 
+  name: role-resource                              # the name of your role
+  apiGroup: rbac.authorization.k8s.io              # roles falls under rbac.authorization.k8s.io in apiGroups, therefore
+                                                   # reference the role from that apiGroup because it falls under it
