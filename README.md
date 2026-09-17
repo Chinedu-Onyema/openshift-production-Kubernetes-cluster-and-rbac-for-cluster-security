@@ -94,7 +94,7 @@ Additional examples (`cluster_role.yml`, `cluster_binding_role.yml`, `new_role.y
 
 2) A new page appears. Click Display Token.
 
-3)Copy the provided login token command.
+3) Copy the provided login token command.
 
 
 ### Step 6: Configure Terminal and Login via CLI
