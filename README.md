@@ -21,7 +21,7 @@ Role: Defines a set of permissions (verbs) applicable within a specific namespac
 RoleBinding: Grants the permissions defined in a Role to a subject (User, Group, or ServiceAccount).
 
 
-### PDF GUIDE: [CREATE YOUR FIRST PRODUCTION KUBERNETES CLUSTER WITH OPENSHIFT.pdf](https://github.com/user-attachments/files/32320974/CREATE.YOUR.FIRST.PRODUCTION.KUBERNETES.CLUSTER.WITH.OPENSHIFT.pdf)
+### PDF GUIDE: [PRODUCTION KUBERNETES CLUSTER WITH OPENSHIFT.pdf](https://github.com/user-attachments/files/32320974/CREATE.YOUR.FIRST.PRODUCTION.KUBERNETES.CLUSTER.WITH.OPENSHIFT.pdf)
 
 ### WATCH VIDEO WALKTHROUGH HERE: https://youtu.be/25PNfppwrBM
 
