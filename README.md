@@ -21,6 +21,11 @@ Role: Defines a set of permissions (verbs) applicable within a specific namespac
 RoleBinding: Grants the permissions defined in a Role to a subject (User, Group, or ServiceAccount).
 
 
+### PDF GUIDE:[CREATE YOUR FIRST PRODUCTION KUBERNETES CLUSTER WITH OPENSHIFT.pdf](https://github.com/user-attachments/files/32320974/CREATE.YOUR.FIRST.PRODUCTION.KUBERNETES.CLUSTER.WITH.OPENSHIFT.pdf)
+
+### WATCH VIDEO WALKTHROUGH HERE: https://youtu.be/25PNfppwrBM
+
+
 
 ## PREREQUISITES
 
@@ -236,7 +241,7 @@ Checking Additional Permissions:
 #### apply your changes
 <PRE>kubectl apply -f role.yml</PRE>
 
-#### Use kubectl to get namespaces from your free OpenShift cluster. Also observe that you cannot namespaces or projects using kubectl
+#### Use kubectl to get namespaces from your free OpenShift cluster. Also observe that you cannot list namespaces or projects using kubectl
 <PRE>kubectl get namespaces</PRE>
 
 #### edit the role binding file
@@ -263,4 +268,38 @@ Checking Additional Permissions:
 
 
 ### Step 9: Delete The Roles & Resources You Have Created
+
+This is optional.
+
+#### switch to this namespace or project
+#### this should be your active namespace
+
+<PRE>oc project techdealer1000-dev</PRE>
+
+#### list the roles you have in this namespace
+<PRE>kubectl get roles -n <your-namespace-name></PRE>
+<PRE>kubectl get roles -n techdealer1000-dev</PRE>
+
+#### delete the role resource
+<PRE>kubectl delete role role-resource -n <your-namespace-name></PRE>
+<PRE>kubectl delete role role-resource -n techdealer1000-dev</PRE>
+
+#### get the role bindings you created in this namespace
+<PRE>kubectl get rolebindings -n <your-namespace-name></PRE>
+<PRE>kubectl get rolebindings -n techdealer1000-dev</PRE>
+
+#### delete the role bindings you created
+<PRE>kubectl delete rolebinding role-binding-resource -n <your-namespace-name></PRE>
+<PRE>kubectl delete rolebinding role-binding-resource -n techdealer1000-dev</PRE>
+
+#### get the service account you created in this namespace
+<PRE>kubectl get serviceaccount -n <your-namepace-name></PRE>
+<PRE>kubectl get serviceaccount -n techdealer1000-dev</PRE>
+
+#### delete the service account resource you created
+<PRE>kubectl delete serviceaccount service-resource -n <your-namespace-name></PRE>
+<PRE>kubectl delete serviceaccount service-resource -n techdealer1000-dev</PRE>
+
+#### check they are all gone
+<PRE>kubectl get roles, rolebindings, serviceaccounts -n techdealer1000-dev</PRE>
 
