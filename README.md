@@ -1,12 +1,12 @@
 # Build & Secure Production Kubernetes Cluster with OpenShift & Enforce RBAC for Cluster Security
 
-This walkthrough provides a comprehensive, step-by-step guide to creating a production-grade Kubernetes cluster using Red Hat OpenShift and implementing robust security measures through Role-Based Access Control (RBAC).
+This guide provides a comprehensive, step-by-step guide to creating a production-grade Kubernetes cluster using Red Hat OpenShift and implementing robust security measures through Role-Based Access Control (RBAC).
 
 The primary objective is to equip participants with the practical skills necessary to deploy, manage, and secure containerized applications in an enterprise environment using OpenShift, a leading enterprise Kubernetes-based platform.
 
-The walkthrough begins by establishing a clear understanding of OpenShift. While Kubernetes serves as the underlying orchestration engine, OpenShift is positioned as a more complete platform that offers additional tools and features designed to simplify the construction, deployment, and management of production application workloads. It functions as a container orchestrator similar to EKS, AKS, and GKE, and is available as a service on major cloud platforms, such as Red Hat OpenShift on AWS.
+The guide begins by establishing a clear understanding of OpenShift. While Kubernetes serves as the underlying orchestration engine, OpenShift is positioned as a more complete platform that offers additional tools and features designed to simplify the construction, deployment, and management of production application workloads. It functions as a container orchestrator similar to EKS, AKS, and GKE, and is available as a service on major cloud platforms, such as Red Hat OpenShift on AWS.
 
-By concluding this project, participants will have gained hands-on experience in navigating the OpenShift platform and a deep understanding of how to apply the principle of least privilege in Kubernetes to secure a production environment
+By concluding this guide, participants will have gained hands-on experience in navigating the OpenShift platform and a deep understanding of how to apply the principle of least privilege in Kubernetes to secure a production environment
 
 
 ## ARCHITECTURAL CONCEPTS
