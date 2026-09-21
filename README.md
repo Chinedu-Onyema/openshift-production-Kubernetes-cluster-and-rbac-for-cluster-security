@@ -1,4 +1,4 @@
-# Build & Secure Production Kubernetes Cluster with OpenShift & Enforcing RBAC for Cluster Security
+# Build & Secure Production Kubernetes Cluster with OpenShift & Enforce RBAC for Cluster Security
 
 This walkthrough provides a comprehensive, step-by-step guide to creating a production-grade Kubernetes cluster using Red Hat OpenShift and implementing robust security measures through Role-Based Access Control (RBAC).
 
