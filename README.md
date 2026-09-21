@@ -1,13 +1,12 @@
-# Create a Production Kubernetes Cluster with OpenShift and Enforce RBAC for Cluster Security
+# Build & Secure Production Kubernetes Cluster with OpenShift & Enforcing RBAC for Cluster Security
 
-This project provides a comprehensive walkthrough on deploying a production-ready Kubernetes application environment using Red Hat OpenShift. 
+This walkthrough provides a comprehensive, step-by-step guide to creating a production-grade Kubernetes cluster using Red Hat OpenShift and implementing robust security measures through Role-Based Access Control (RBAC).
 
-It specifically focuses on implementing robust security measures through Role-Based Access Control (RBAC). 
+The primary objective is to equip participants with the practical skills necessary to deploy, manage, and secure containerized applications in an enterprise environment using OpenShift, a leading enterprise Kubernetes-based platform.
 
-While standard Kubernetes provides the orchestration engine, OpenShift offers a simplified platform with advanced tools for managing and securing containerized workloads. 
+The walkthrough begins by establishing a clear understanding of OpenShift. While Kubernetes serves as the underlying orchestration engine, OpenShift is positioned as a more complete platform that offers additional tools and features designed to simplify the construction, deployment, and management of production application workloads. It functions as a container orchestrator similar to EKS, AKS, and GKE, and is available as a service on major cloud platforms, such as Red Hat OpenShift on AWS.
 
-This guide uses the Red Hat OpenShift Developer Sandbox for a 30-day shared cluster experience.
-
+By concluding this project, participants will have gained hands-on experience in navigating the OpenShift platform and a deep understanding of how to apply the principle of least privilege in Kubernetes to secure a production environment
 
 
 ## ARCHITECTURAL CONCEPTS
